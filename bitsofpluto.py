@@ -75,7 +75,7 @@ def main() -> None:
         description="Posting a different bit of Pluto every six hours.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    parser.add_argument("-p", "--pluto", default="data/crop_p_color2_enhanced_release.png", help="Path to a big photo of Pluto")
+    parser.add_argument("-p", "--pluto", default="crop_p_color2_enhanced_release.png", help="Path to a big photo of Pluto")
     args = parser.parse_args()
     send_post(args)
 
