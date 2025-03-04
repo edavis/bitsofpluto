@@ -4,6 +4,7 @@ Bluesky bot posting a different bit of Pluto every six hours.
 Photo by NASA's New Horizons spacecraft.
 https://www.nasa.gov/image-feature/the-rich-color-variations-of-pluto/
 """
+import os
 import argparse
 import random
 from io import BytesIO
