@@ -53,7 +53,8 @@ def crop_image(pluto_filename: str) -> str:
             break
 
     buf = BytesIO()
-    bit_of_pluto.save(buf, 'JPEG', quality=95)
+    bit_of_pluto.save(buf, format='JPEG', quality=95)
+    buf.seek(0)
     return buf, width, height
 
 
