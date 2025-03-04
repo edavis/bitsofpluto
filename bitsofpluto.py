@@ -66,7 +66,7 @@ def send_post(args):
         text = '',
         image = cropped,
         image_alt = "A cropped image of Pluto taken by NASA's New Horizons spacecraft.",
-        image_aspect_ratio = models.AppBskyEmbedDefs.AspectRatio(width=width, height=height)
+        image_aspect_ratio = models.AppBskyEmbedDefs.AspectRatio(width=int(width), height=int(height))
     )
 
 
