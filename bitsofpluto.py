@@ -64,7 +64,7 @@ def send_post(args):
     cropped, width, height = crop_image(args.pluto)
     client.send_image(
         text = '',
-        image = cropped,
+        image = cropped.read(),
         image_alt = "A cropped image of Pluto taken by NASA's New Horizons spacecraft.",
         image_aspect_ratio = models.AppBskyEmbedDefs.AspectRatio(width=int(width), height=int(height))
     )
